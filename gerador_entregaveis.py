@@ -34,7 +34,7 @@ def gerar_entregaveis(detalhes, caminho_arquivo):
     try:
         with open(caminho_arquivo, mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerow(["Opção Escolhida"])
+            writer.writerow(["Opção recomendada:"])
             writer.writerow([opcao_escolhida])
         print(f"Opção escolhida salva com sucesso em: {caminho_arquivo}")
         return caminho_arquivo
